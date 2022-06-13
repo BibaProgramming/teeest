@@ -1,0 +1,61 @@
+from main import parol
+class InstaBot:
+    name_bot = 'InstagramBot'
+
+    def __init__(self, Login, Porol):
+        self.l = Login
+        self.p = Porol
+
+    def pin(self):
+        return parol(self)
+
+class InstaBot2(InstaBot):
+
+    def world_Biba(self):
+        print(f'''Hello 
+Viberite odno:
+1)Komp
+2)nout''')
+        f = input('- ')
+        if f == '1':
+            return self.kompukter()
+        elif f == '2':
+            return self.noutbuk()
+
+    def kompukter(self):
+        print('Downloading...')
+        print(f''' 1) Ofisni
+2) igravoi''')
+        d = input('- ')
+        if d == '1':
+            print('s vas 300000tg')
+        elif d == '2':
+            print('s vas 550000tg')
+        elif d == '0':
+            return self.world_Biba()
+
+    def noutbuk(self):
+        print('Downloading...')
+        print(f''' 1) igravoi
+  2) ofisni''')
+        g = input('- ')
+        if g == '1':
+            print('s vas 1000000tg')
+        elif g == '2':
+            print('s vas 600000tg')
+        elif g == '0':
+            return self.world_Biba()
+
+z = InstaBot2('biba2008', '2008')
+z.pin()
+
+def parol(self):
+    login = input('Vedite login: ')
+    password = input('Vedite password: ')
+    if login == self.l and password == self.p:
+        return self.world_Biba()
+
+    else:
+        print('Ne pravilni porol ili login!')
+        while login != self.l and password != self.p:
+            return self.parol()
